@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA34BCBD245E04D50014F1DE /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34BCBC245E04D50014F1DE /* Subscription.swift */; };
+		CA34BCBF245E05050014F1DE /* Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA34BCBE245E05050014F1DE /* Convertible.swift */; };
 		CAE9D524245DFDA00084B491 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D51E245DFDA00084B491 /* SecondView.swift */; };
 		CAE9D525245DFDA00084B491 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D51F245DFDA00084B491 /* SecondModel.swift */; };
 		CAE9D527245DFDA00084B491 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D521245DFDA00084B491 /* SecondPresenter.swift */; };
@@ -26,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CA34BCBC245E04D50014F1DE /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		CA34BCBE245E05050014F1DE /* Convertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Convertible.swift; sourceTree = "<group>"; };
 		CAE9D51E245DFDA00084B491 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		CAE9D51F245DFDA00084B491 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
 		CAE9D521245DFDA00084B491 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				CAFDDD63245DBD6F005C5E85 /* Observer.swift */,
 				CAFDDD64245DBD6F005C5E85 /* Registry.swift */,
 				CAFDDD65245DBD6F005C5E85 /* Observable.swift */,
+				CA34BCBC245E04D50014F1DE /* Subscription.swift */,
+				CA34BCBE245E05050014F1DE /* Convertible.swift */,
 			);
 			path = Observation;
 			sourceTree = "<group>";
@@ -224,6 +230,8 @@
 				CAE9D525245DFDA00084B491 /* SecondModel.swift in Sources */,
 				CAFDDD77245DBFDB005C5E85 /* FirstView.swift in Sources */,
 				CAE9D527245DFDA00084B491 /* SecondPresenter.swift in Sources */,
+				CA34BCBF245E05050014F1DE /* Convertible.swift in Sources */,
+				CA34BCBD245E04D50014F1DE /* Subscription.swift in Sources */,
 				CAFDDD80245DC4AB005C5E85 /* RootRouter.swift in Sources */,
 				CAE9D524245DFDA00084B491 /* SecondView.swift in Sources */,
 				CAFDDD66245DBD6F005C5E85 /* Observer.swift in Sources */,

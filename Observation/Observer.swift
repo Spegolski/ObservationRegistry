@@ -30,16 +30,3 @@ extension Observer {
         return Subscription(observer: self)
     }
 }
-
-struct Subscription {
-    private(set) weak var observer: Observer?
-    private(set) var actionHandler: Observer.Action?
-    
-    init(observer: Observer) {
-        self.observer = observer
-    }
-    
-    mutating func add(_ actionHandler: @escaping Observer.Action) {
-        self.actionHandler = actionHandler
-    }
-}

@@ -8,16 +8,6 @@
 
 import Foundation
 
-protocol Convertible: Hashable {
-    var identifier: Int { get }
-}
-
-extension Convertible {
-    var identifier: Int {
-        return self.hashValue
-    }
-}
-
 protocol Observable {
     associatedtype `Event` where Event: Convertible
 
