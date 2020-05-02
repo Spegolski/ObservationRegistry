@@ -11,7 +11,7 @@ import Foundation
 protocol RecordingService: AnyObject {
     var enteredValue: String? { get }
     
-    func update(value: String)
+    func update(value: String?)
 }
 
 class RecordingServiceImpl: RecordingService {
@@ -32,7 +32,7 @@ class RecordingServiceImpl: RecordingService {
         self.setupSubscriptions()
     }
     
-    func update(value: String) {
+    func update(value: String?) {
         self.enteredValue = value
     }
     

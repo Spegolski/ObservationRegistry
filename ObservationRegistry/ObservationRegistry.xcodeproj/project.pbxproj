@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CAE9D524245DFDA00084B491 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D51E245DFDA00084B491 /* SecondView.swift */; };
+		CAE9D525245DFDA00084B491 /* SecondModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D51F245DFDA00084B491 /* SecondModel.swift */; };
+		CAE9D527245DFDA00084B491 /* SecondPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE9D521245DFDA00084B491 /* SecondPresenter.swift */; };
 		CAFDDD38245D9AA4005C5E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD37245D9AA4005C5E85 /* AppDelegate.swift */; };
 		CAFDDD3E245D9AA6005C5E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFDDD3D245D9AA6005C5E85 /* Assets.xcassets */; };
 		CAFDDD44245D9AA6005C5E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFDDD42245D9AA6005C5E85 /* LaunchScreen.storyboard */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CAE9D51E245DFDA00084B491 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
+		CAE9D51F245DFDA00084B491 /* SecondModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondModel.swift; sourceTree = "<group>"; };
+		CAE9D521245DFDA00084B491 /* SecondPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondPresenter.swift; sourceTree = "<group>"; };
 		CAFDDD34245D9AA4005C5E85 /* ObservationRegistry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservationRegistry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAFDDD37245D9AA4005C5E85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAFDDD3D245D9AA6005C5E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +110,10 @@
 		CAFDDD6C245DBF36005C5E85 /* FirstScreen */ = {
 			isa = PBXGroup;
 			children = (
+				CAFDDD71245DBFDB005C5E85 /* FirstView.swift */,
+				CAFDDD72245DBFDB005C5E85 /* FirstModel.swift */,
+				CAFDDD74245DBFDB005C5E85 /* FirstPresenter.swift */,
+				CAFDDD81245DC524005C5E85 /* FirstRouter.swift */,
 			);
 			path = FirstScreen;
 			sourceTree = "<group>";
@@ -111,10 +121,9 @@
 		CAFDDD6E245DBF48005C5E85 /* SecondScreen */ = {
 			isa = PBXGroup;
 			children = (
-				CAFDDD71245DBFDB005C5E85 /* FirstView.swift */,
-				CAFDDD72245DBFDB005C5E85 /* FirstModel.swift */,
-				CAFDDD74245DBFDB005C5E85 /* FirstPresenter.swift */,
-				CAFDDD81245DC524005C5E85 /* FirstRouter.swift */,
+				CAE9D51E245DFDA00084B491 /* SecondView.swift */,
+				CAE9D51F245DFDA00084B491 /* SecondModel.swift */,
+				CAE9D521245DFDA00084B491 /* SecondPresenter.swift */,
 			);
 			path = SecondScreen;
 			sourceTree = "<group>";
@@ -212,8 +221,11 @@
 				CAFDDD68245DBD6F005C5E85 /* Observable.swift in Sources */,
 				CAFDDD7E245DC0C0005C5E85 /* RecordingService.swift in Sources */,
 				CAFDDD38245D9AA4005C5E85 /* AppDelegate.swift in Sources */,
+				CAE9D525245DFDA00084B491 /* SecondModel.swift in Sources */,
 				CAFDDD77245DBFDB005C5E85 /* FirstView.swift in Sources */,
+				CAE9D527245DFDA00084B491 /* SecondPresenter.swift in Sources */,
 				CAFDDD80245DC4AB005C5E85 /* RootRouter.swift in Sources */,
+				CAE9D524245DFDA00084B491 /* SecondView.swift in Sources */,
 				CAFDDD66245DBD6F005C5E85 /* Observer.swift in Sources */,
 				CAFDDD67245DBD6F005C5E85 /* Registry.swift in Sources */,
 				CAFDDD6B245DBD97005C5E85 /* Example.swift in Sources */,

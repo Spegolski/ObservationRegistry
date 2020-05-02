@@ -30,6 +30,11 @@ class RootRouter {
 
 extension RootRouter: FirstRouter {
     func showSecondScreen() {
-        print("say hi")
+        let view = SecondViewController()
+        let model = SecondDefaultModel(service: self.recordingService)
+        let presenter = SecondDefaultPresenter(view: view, model: model)
+        view.presenter = presenter
+        
+        self.initialView?.show(view, sender: self)
     }
 }
