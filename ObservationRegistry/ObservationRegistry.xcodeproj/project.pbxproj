@@ -10,6 +10,16 @@
 		CAFDDD38245D9AA4005C5E85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD37245D9AA4005C5E85 /* AppDelegate.swift */; };
 		CAFDDD3E245D9AA6005C5E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAFDDD3D245D9AA6005C5E85 /* Assets.xcassets */; };
 		CAFDDD44245D9AA6005C5E85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAFDDD42245D9AA6005C5E85 /* LaunchScreen.storyboard */; };
+		CAFDDD66245DBD6F005C5E85 /* Observer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD63245DBD6F005C5E85 /* Observer.swift */; };
+		CAFDDD67245DBD6F005C5E85 /* Registry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD64245DBD6F005C5E85 /* Registry.swift */; };
+		CAFDDD68245DBD6F005C5E85 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD65245DBD6F005C5E85 /* Observable.swift */; };
+		CAFDDD6B245DBD97005C5E85 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD6A245DBD97005C5E85 /* Example.swift */; };
+		CAFDDD77245DBFDB005C5E85 /* FirstView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD71245DBFDB005C5E85 /* FirstView.swift */; };
+		CAFDDD78245DBFDB005C5E85 /* FirstModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD72245DBFDB005C5E85 /* FirstModel.swift */; };
+		CAFDDD7A245DBFDB005C5E85 /* FirstPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD74245DBFDB005C5E85 /* FirstPresenter.swift */; };
+		CAFDDD7E245DC0C0005C5E85 /* RecordingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD7D245DC0C0005C5E85 /* RecordingService.swift */; };
+		CAFDDD80245DC4AB005C5E85 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD7F245DC4AB005C5E85 /* RootRouter.swift */; };
+		CAFDDD82245DC524005C5E85 /* FirstRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFDDD81245DC524005C5E85 /* FirstRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +28,16 @@
 		CAFDDD3D245D9AA6005C5E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAFDDD43245D9AA6005C5E85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAFDDD45245D9AA6005C5E85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFDDD63245DBD6F005C5E85 /* Observer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observer.swift; sourceTree = "<group>"; };
+		CAFDDD64245DBD6F005C5E85 /* Registry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registry.swift; sourceTree = "<group>"; };
+		CAFDDD65245DBD6F005C5E85 /* Observable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		CAFDDD6A245DBD97005C5E85 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		CAFDDD71245DBFDB005C5E85 /* FirstView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstView.swift; sourceTree = "<group>"; };
+		CAFDDD72245DBFDB005C5E85 /* FirstModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstModel.swift; sourceTree = "<group>"; };
+		CAFDDD74245DBFDB005C5E85 /* FirstPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPresenter.swift; sourceTree = "<group>"; };
+		CAFDDD7D245DC0C0005C5E85 /* RecordingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingService.swift; sourceTree = "<group>"; };
+		CAFDDD7F245DC4AB005C5E85 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		CAFDDD81245DC524005C5E85 /* FirstRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +54,7 @@
 		CAFDDD2B245D9AA4005C5E85 = {
 			isa = PBXGroup;
 			children = (
+				CAFDDD62245DBD6F005C5E85 /* Observation */,
 				CAFDDD36245D9AA4005C5E85 /* ObservationRegistry */,
 				CAFDDD35245D9AA4005C5E85 /* Products */,
 			);
@@ -50,12 +71,69 @@
 		CAFDDD36245D9AA4005C5E85 /* ObservationRegistry */ = {
 			isa = PBXGroup;
 			children = (
+				CAFDDD7F245DC4AB005C5E85 /* RootRouter.swift */,
+				CAFDDD70245DBF5A005C5E85 /* Services */,
+				CAFDDD6F245DBF50005C5E85 /* Screens */,
 				CAFDDD37245D9AA4005C5E85 /* AppDelegate.swift */,
 				CAFDDD3D245D9AA6005C5E85 /* Assets.xcassets */,
 				CAFDDD42245D9AA6005C5E85 /* LaunchScreen.storyboard */,
 				CAFDDD45245D9AA6005C5E85 /* Info.plist */,
 			);
 			path = ObservationRegistry;
+			sourceTree = "<group>";
+		};
+		CAFDDD62245DBD6F005C5E85 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDDD69245DBD7B005C5E85 /* UsageExample  */,
+				CAFDDD63245DBD6F005C5E85 /* Observer.swift */,
+				CAFDDD64245DBD6F005C5E85 /* Registry.swift */,
+				CAFDDD65245DBD6F005C5E85 /* Observable.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		CAFDDD69245DBD7B005C5E85 /* UsageExample  */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDDD6A245DBD97005C5E85 /* Example.swift */,
+			);
+			path = "UsageExample ";
+			sourceTree = "<group>";
+		};
+		CAFDDD6C245DBF36005C5E85 /* FirstScreen */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FirstScreen;
+			sourceTree = "<group>";
+		};
+		CAFDDD6E245DBF48005C5E85 /* SecondScreen */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDDD71245DBFDB005C5E85 /* FirstView.swift */,
+				CAFDDD72245DBFDB005C5E85 /* FirstModel.swift */,
+				CAFDDD74245DBFDB005C5E85 /* FirstPresenter.swift */,
+				CAFDDD81245DC524005C5E85 /* FirstRouter.swift */,
+			);
+			path = SecondScreen;
+			sourceTree = "<group>";
+		};
+		CAFDDD6F245DBF50005C5E85 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDDD6E245DBF48005C5E85 /* SecondScreen */,
+				CAFDDD6C245DBF36005C5E85 /* FirstScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		CAFDDD70245DBF5A005C5E85 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CAFDDD7D245DC0C0005C5E85 /* RecordingService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +206,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAFDDD82245DC524005C5E85 /* FirstRouter.swift in Sources */,
+				CAFDDD7A245DBFDB005C5E85 /* FirstPresenter.swift in Sources */,
+				CAFDDD78245DBFDB005C5E85 /* FirstModel.swift in Sources */,
+				CAFDDD68245DBD6F005C5E85 /* Observable.swift in Sources */,
+				CAFDDD7E245DC0C0005C5E85 /* RecordingService.swift in Sources */,
 				CAFDDD38245D9AA4005C5E85 /* AppDelegate.swift in Sources */,
+				CAFDDD77245DBFDB005C5E85 /* FirstView.swift in Sources */,
+				CAFDDD80245DC4AB005C5E85 /* RootRouter.swift in Sources */,
+				CAFDDD66245DBD6F005C5E85 /* Observer.swift in Sources */,
+				CAFDDD67245DBD6F005C5E85 /* Registry.swift in Sources */,
+				CAFDDD6B245DBD97005C5E85 /* Example.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +353,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ObservationRegistry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ObservationRegistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -284,7 +371,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"ObservationRegistry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ObservationRegistry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -19,7 +19,7 @@ extension Convertible {
 }
 
 protocol Observable {
-    associatedtype Event where Event: Convertible
+    associatedtype `Event` where Event: Convertible
 
     func notify(event: Event)
 }
@@ -27,29 +27,5 @@ protocol Observable {
 extension Observable {
     func notify(event: Event) {
         Registry.shared.fire(event: event.identifier)
-    }
-}
-
-class FirstObservable: Observable {
-    enum Values: Convertible {
-        case didChangeValue
-    }
-    
-    typealias Event = Values
-    
-    func didChangeValue() {
-        self.notify(event: .didChangeValue)
-    }
-}
-
-class SecondObservable: Observable {
-    enum Values: Convertible {
-        case didTapButton
-    }
-    
-    typealias Event = Values
-    
-    func didChangeValue() {
-        self.notify(event: .didTapButton)
     }
 }

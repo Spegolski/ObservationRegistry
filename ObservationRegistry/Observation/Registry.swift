@@ -16,7 +16,12 @@ class Registry: NSObject {
     var subscriptions: [Int: [Subscription]] = [:]
     
     func add(_ subscription: Subscription, to eventId: Int) {
-        self.subscriptions[eventId]?.append(subscription)
+        // TODO: - It may be necessary to check the observer duplication for each key
+        if self.subscriptions[eventId] != nil {
+            self.subscriptions[eventId]?.append(subscription)
+        } else {
+            self.subscriptions[eventId] = [subscription]
+        }
     }
     
     func remove(_ subscription: Subscription, from eventId: Int) {

@@ -31,27 +31,6 @@ extension Observer {
     }
 }
 
-class FirstObserver: Observer {
-    func subscribeToEvents() {
-        self.subscribe(to: FirstObservable.Values.didChangeValue, actionHandler: { [weak self] in
-            self?.didChangeValue()
-        })
-        self.subscribe(to: SecondObservable.Values.didTapButton, actionHandler: { [weak self] in
-            self?.didTapButton()
-        })
-    }
-    
-    @objc
-    func didChangeValue() {
-        
-    }
-    
-    @objc
-    func didTapButton() {
-        
-    }
-}
-
 struct Subscription {
     private(set) weak var observer: Observer?
     private(set) var actionHandler: Observer.Action?
